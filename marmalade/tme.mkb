@@ -1,0 +1,53 @@
+#!/usr/bin/env mkb
+options
+{
+}
+
+includepaths
+{
+	../source/
+}
+
+subprojects
+{
+	tinyxml
+	../../library/marmalade/library
+}
+
+files
+{
+	(../source)
+	tme.h
+
+	["main"]
+	../main.cpp
+	../main.h
+	
+	["base"]
+	(../source/base)
+	"*.cpp"
+
+	["inc"]
+	(../source/baseinc)
+	"*.h"
+
+	["scenario"]
+	(../source/scenario)
+	"*.cpp"
+
+	["scenario default"]
+	(../source/scenarios/default)
+	"*.cpp"
+	"*.h"
+
+	["scenario lom"]
+	(../source/scenarios/lom)
+	"*.cpp"
+	"*.h"
+
+	["scenario ddr"]
+	(../source/scenarios/ddr)
+	"*.cpp"
+	"*.h"
+
+}
