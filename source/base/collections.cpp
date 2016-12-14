@@ -67,7 +67,7 @@ namespace tme {
 			return TRUE ;
 		}
 
-		BOOL entities::Create( mxscenario* scenario, idtype_t type, u32 count )
+		BOOL entities::Create( mxscenario* scenario, id_type_t type, u32 count )
 		{
 			Create(count);
 

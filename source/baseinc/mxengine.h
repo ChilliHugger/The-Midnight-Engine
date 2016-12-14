@@ -3,7 +3,10 @@
 
 #include "info.h"
 #include "../baseinc/scenario.h"
+
+#ifdef _MARMALADE_
 #include "IwDebug.h"
+#endif
 
 #define ISARG(x)	chilli::lib::stricmp( arg, x ) == 0 
 #define COMMAND(x)	static MXRESULT (x)( const string& arg, variant argv[], u32 argc)
@@ -97,7 +100,7 @@ namespace tme {
 		u32 CollectRoutenodes ( mxgridref loc, entities& collection ) ;
 
 		cvarreg_t* FindDBVariable ( const string& name ) const;
-		mxentity* EntityByName( const string& name, idtype_t type=IDT_NONE );
+		mxentity* EntityByName( const string& name, id_type_t type=IDT_NONE );
 		mxentity* EntityByIdt( mxid id );
         LPCSTR EntitySymbolById ( mxid id );
 		MXRESULT EntityLinkData( mxid id, const void* data );

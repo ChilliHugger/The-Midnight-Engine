@@ -18,7 +18,7 @@ namespace tme {
 		virtual scenarioinfo_t* GetInfoBlock() const;
 		virtual MXRESULT Register ( mxengine* midnightx );
 		virtual MXRESULT UnRegister ( mxengine* midnightx );	
-		virtual mxentity* CreateEntity ( idtype_t type );
+		virtual mxentity* CreateEntity ( id_type_t type );
 
         virtual void NightStop(void);
 

@@ -124,7 +124,7 @@ namespace tme {
 		u32 SafeId() const ;
 		mxid SafeIdt() const ;
 
-		PROPERTY( idtype_t, Type, type );
+		PROPERTY( id_type_t, Type, type );
 		PROPERTY( u32, Id, id );
 
 		string& Symbol() 		{ return symbol ; }
@@ -140,7 +140,7 @@ namespace tme {
 		FLAG_PROPERTY( IsDisabled,	et_disabled )
 
 	protected:
-		idtype_t	type;
+		id_type_t	type;
 		u32			id;
 		string		symbol;
 		flags32		flags;
@@ -452,7 +452,7 @@ inline chilli::lib::archive& operator>>( chilli::lib::archive& ar, mxunit& unit 
 			entities(void);
 			~entities(void);
 			BOOL Create( u32 count );
-			BOOL Create( mxscenario* scenario, idtype_t type, u32 count );
+			BOOL Create( mxscenario* scenario, id_type_t type, u32 count );
 			void Clear(); 
 			BOOL CreateIdtCollection ( c_mxid& obj );
 			u32 Count() const;

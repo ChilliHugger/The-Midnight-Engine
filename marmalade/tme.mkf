@@ -3,6 +3,11 @@ options
 {
 }
 
+defines
+{
+	_MARMALADE_
+}
+
 includepaths
 {
 	../source/

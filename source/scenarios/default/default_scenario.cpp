@@ -159,7 +159,7 @@ namespace tme {
 		* 
 		*/
 
-		mxentity* mxscenario::CreateEntity ( idtype_t type )
+		mxentity* mxscenario::CreateEntity ( id_type_t type )
 		{
 			switch ( type ) {
 				case IDT_ARMY:

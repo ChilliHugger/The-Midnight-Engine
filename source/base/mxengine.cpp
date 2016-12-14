@@ -17,6 +17,9 @@
 #include "../baseinc/tme_internal.h"
 #include <stdio.h>
 
+#ifdef _COCOS2D_
+#include "cocos2d.h"
+#endif
 
 using namespace tme ;
 //using namespace tme::item ;
@@ -1026,7 +1029,7 @@ LPCSTR mxengine::EntitySymbolById ( mxid id )
     return entity->Symbol();
 }
 
-mxentity* mxengine::EntityByName( const string& name, idtype_t type )
+mxentity* mxengine::EntityByName( const string& name, id_type_t type )
 {
 mxentity* obj;
 	
@@ -1157,8 +1160,12 @@ void mxengine::debug (LPCSTR format, ... )
   	vsprintf( msg_buffer, format, arglist );
   	va_end( arglist ) ;
 	
+#ifdef _MARMALADE_
 	IwTrace( TME, ("%s",msg_buffer));
-	
+#endif
+#ifdef _COCOS2D_
+    CCLOG("%s",msg_buffer);
+#endif
 }
 
 

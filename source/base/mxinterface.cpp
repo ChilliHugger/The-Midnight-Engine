@@ -82,7 +82,7 @@ namespace tme {
 	//
 	// RETURNS:	idt
 	//
-	mxid mxinterface::EntityByName( const string& name, idtype_t type )
+	mxid mxinterface::EntityByName( const string& name, id_type_t type )
 	{
 		mxentity* obj  = mx->EntityByName( name, type );
 		if ( obj ) {
@@ -139,7 +139,7 @@ namespace tme {
 	{
 	mxentity*	obj = NULL ;
 
-		idtype_t type = (idtype_t)ID_TYPE(id);
+		id_type_t type = (id_type_t)ID_TYPE(id);
 		int objectno = GET_ID(id);
 
 		switch ( type ) {

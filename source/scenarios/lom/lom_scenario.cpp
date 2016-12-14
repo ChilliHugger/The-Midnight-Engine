@@ -123,7 +123,7 @@ MXRESULT lom_x::UnRegister ( mxengine* midnightx )
 
 	
 	
-mxentity* lom_x::CreateEntity ( idtype_t type )
+mxentity* lom_x::CreateEntity ( id_type_t type )
 {
 	switch ( type ) {
 		case IDT_STRONGHOLD:

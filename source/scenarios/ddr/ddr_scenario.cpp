@@ -238,7 +238,7 @@ mxterrain_t ddr_x::NormaliseTerrain( mxterrain_t t) const
     return t;
 }
     
-mxentity* ddr_x::CreateEntity ( idtype_t type )
+mxentity* ddr_x::CreateEntity ( id_type_t type )
 {
 	switch ( type ) {
 		case IDT_CHARACTER:

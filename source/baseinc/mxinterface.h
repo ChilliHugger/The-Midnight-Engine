@@ -1,7 +1,7 @@
 #ifndef _CMXINTERFACE_H_INCLUDED_
 #define _CMXINTERFACE_H_INCLUDED_
 
-#include "../libinc/library.h"
+#include "library.h"
 #include "lomxtypes.h"
 
 namespace tme {
@@ -17,7 +17,7 @@ namespace tme {
 		MXRESULT EntityLinkData( mxid id, const void* data );
 		
 
-		mxid EntityByName( const string& name, idtype_t type=IDT_NONE );
+		mxid EntityByName( const string& name, id_type_t type=IDT_NONE );
 		MXRESULT GetEntityProperty( mxid id, const string& name, variant& arg) const ;
 		MXRESULT GetEntityProperties ( mxid id, const string& name, variant argv[], u32 argc );
 

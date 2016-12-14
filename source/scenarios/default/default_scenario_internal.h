@@ -37,7 +37,7 @@ namespace tme {
 			virtual MXRESULT UnRegister ( mxengine* midnightx );
 
 			virtual void initialiseAfterCreate ( void );
-            virtual mxentity* CreateEntity ( idtype_t type );
+            virtual mxentity* CreateEntity ( id_type_t type );
 			virtual void Serialize ( chilli::lib::archive& ar ) ;
 
 			virtual void NightStart(void);
